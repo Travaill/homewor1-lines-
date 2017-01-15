@@ -3,11 +3,11 @@ int main()
 {
 	int i,t,sum=0,lines[100000];
 	FILE *fp;
-	char filename[100000];
+	char filename[261];
 	for(i=0;;i++)
 	{
 	   printf("请输入文件名或文件地址:");
-	   scanf("%s",filename);
+	   gets(filename);
 	   fp=fopen(filename,"rt"); 
 	   if(fp!=NULL)
       {
